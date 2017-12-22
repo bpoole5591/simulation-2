@@ -5,8 +5,8 @@ import { Switch, BrowserRouter as Route } from "react-router-dom";
 
 // Components
 
-import Login from "./components/login/login";
-import Dashboard from "./components/dashboard/dashboard";
+import login from "./components/login/login";
+import dashboard from "./components/dashboard/dashboard";
 
 // CSS
 import "./App.css";
@@ -16,8 +16,8 @@ class App extends Component {
     return (
       <div className="App">
         <Switch>
-          <Route exact path="./login" component={Login} />
-          <Route path="/" component={Dashboard} />
+          <Route exact path="/login" component={login} />
+          <Route path="/" component={dashboard} />
         </Switch>
       </div>
     );
